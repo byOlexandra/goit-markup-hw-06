@@ -930,3 +930,73 @@ input::placeholder {
     margin-left: 16px;
     fill: #FFFFFF;
 }
+
+/* footer section tablet */
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 72px;
+
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .footer-first-box {
+        display: block;
+    }
+
+    .bottom-text {
+    max-width: 264px;
+}
+
+.socials-footer {
+    display: block;
+}
+
+.social-meadia-text {
+    margin-bottom: 16px;
+}
+
+.subs-text {
+    align-self: flex-start;
+}
+.subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+}
+
+}
+
+@media screen and (min-width: 1158px) {
+    .footer {
+    padding: 100px 0;
+}
+
+.footer-container {
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+.socials-footer {
+    margin-left: 120px;
+}
+
+.subscribe-input {
+    max-width: 264px;
+}
+
+
+ .subscribe-box {
+    max-width: 600px;
+    margin-left: auto;
+}
+
+.bottom-text {
+    width: 264px;    
+}
+
+
+}
