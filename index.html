@@ -40,60 +40,65 @@
                         </ul>
                     </address>
 
-                    <button class="burger-btn" type="button">
+                    <button class="burger-btn" type="button" data-menu-open>
                         <svg class="burger-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-burger"></use>
                         </svg>
                     </button>
 
              </div>
-             <div class="mobile-menu">
-                <div class="container mobile-menu-container">
+             <div class="mobile-menu" data-menu>
+                <div class="mobile-menu-container">
 
-                    <button type="button" class="mobile-menu-close">
+                    <button type="button" class="mobile-menu-close" data-menu-close>
                         <svg class="mobile-menu-icon" width="8" height="8"><use href="./images/icons.svg#icon-close"></use></svg>
                     </button>
 
-                    <nav>
-                        <ul>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="">Portfolio</a></li>
-                            <li><a href=""></a>Contacts</li>
+                    <nav class="mobile-menu-nav">
+                        <ul class="menu-nav-list">
+                            <li><a href="#" class="menu-nav-item studio">Studio</a></li>
+                            <li><a href="" class="menu-nav-item">Portfolio</a></li>
+                            <li><a href="" class="menu-nav-item">Contacts</a></li>
                         </ul>
                     </nav>
-                    <address>
-                        <ul>
-                            <li><a href="mailto:info@devstudio.com"></a>info@devstudio.com</li>
-                            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+
+                    <address class="mobile-menu-address">
+                        <ul class="mm-address-list">
+                            <li><a href="mailto:info@devstudio.com" class="mm-address-item">info@devstudio.com</a></li>
+                            <li><a href="tel:+110001111111" class="mm-address-item">+11 (000) 111-11-11</a></li>
                         </ul>
                     </address>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg><use></use></svg>
+
+                    <ul class="mm-soc-list">
+                        <li class="mm-soc-item">
+                            <a href="https://www.instagram.com/">
+                                <svg class="" width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use></svg>
                             </a>
                         </li>
-                        <li><a href="">
-                                <svg><use></use></svg>
+                        <li class="mm-soc-item"><a href="https://x.com/">
+                                <svg class="" width="24" height="24"><use href="./images/icons.svg#icon-twitter"></use></svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
-                                <svg><use></use></svg>
+                        <li class="mm-soc-item">
+                            <a href="https://www.facebook.com/?locale=uk_UA">
+                                <svg class="" width="24" height="24"><use href="./images/icons.svg#icon-facebook"></use></svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
-                                <svg><use></use></svg>
+                        <li class="mm-soc-item">
+                            <a href="https://www.linkedin.com/feed/">
+                                <svg class="" width="24" height="24"><use href="./images/icons.svg#icon-linkedin"></use></svg>
                             </a>
                         </li>
+
                     </ul>
                 </div>
              </div>
 
+             <script src="./js/menu.js"></script>
+
         </header>
         <main>
-            <section class="header-section hidden">
+            <section class="header-section">
                 <div class="container header-container">
                     <h1 class="main-title">Effective Solutions 
                      for Your Business
@@ -102,7 +107,7 @@
                 </div>
 
              </section>
-             <section class="section hidden">
+             <section class="section">
                 <div class="container characteristics-container">
                     <h2 class="visually-hidden">Characteristics</h2>
                         <ul class="characteristics-list">
