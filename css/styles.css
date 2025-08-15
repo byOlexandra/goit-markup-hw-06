@@ -311,6 +311,10 @@ ul, ol {
     color: #404bbf;
 }
 
+.mm-address-item.tel-number {
+    color: #4D5AE5;
+}
+
 .mm-soc-list {
     display: flex;
     flex-direction: row;
@@ -320,6 +324,12 @@ ul, ol {
 .mm-soc-item {
     width: 40px;
     height: 40px;
+}
+
+
+.mm-soc-link {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     border: none;
     background-color: #4D5AE5;
@@ -331,9 +341,9 @@ ul, ol {
     transition: background-color 250ms ease;
 }
 
-.mm-soc-item:hover,
-.mm-soc-item:focus {
-    background-color: #31D0AA;
+.mm-soc-link:hover,
+.mm-soc-link:focus {
+     background-color: #31D0AA;
 }
 
 @media screen and (min-width: 768px) {
