@@ -48,7 +48,7 @@
 
              </div>
              <div class="mobile-menu" data-menu>
-                <div class="mobile-menu-container">
+                <div class="container mobile-menu-container">
 
                     <button type="button" class="mobile-menu-close" data-menu-close>
                         <svg class="mobile-menu-icon" width="8" height="8"><use href="./images/icons.svg#icon-close"></use></svg>
@@ -92,9 +92,7 @@
 
                     </ul>
                 </div>
-             </div>
-
-             <script src="./js/menu.js"></script>
+             </div>            
 
         </header>
         <main>
@@ -103,7 +101,7 @@
                     <h1 class="main-title">Effective Solutions 
                      for Your Business
                     </h1>
-                     <button type="button" class="order-button">Order Service</button>
+                     <button type="button" class="order-button" data-modal-open>Order Service</button>
                 </div>
 
              </section>
@@ -348,7 +346,7 @@
                                          ./images/portfolio/portfolio-desk-1@2x-min.jpg 2x">
 
                                          <source media="(min-width: 768px)" 
-                                         srcset="./images/portfolio/portfolio-tab-1-min.jpg 1x
+                                         srcset="./images/portfolio/portfolio-tab-1-min.jpg 1x,
                                          ./images/portfolio/portfolio-tab-1@2x-min.jpg 2x">
 
                                          <source media="(max-width: 767px)" 
@@ -378,7 +376,7 @@
                                          ./images/portfolio/portfolio-tab-2@2x-min.jpg 2x">
 
                                          <source media="(max-width: 767px)" 
-                                         srcset="./images/portfolio/portfolio-mob-2-min.jpg 1x
+                                         srcset="./images/portfolio/portfolio-mob-2-min.jpg 1x,
                                          ./images/portfolio/portfolio-mob-2@2x-min.jpg 2x">
 
                                          <img src="./images/portfolio/portfolio-desk-2-min.jpg" 
@@ -561,9 +559,9 @@
             </div>
         </footer>
 
-                <div class="backdrop">
+                <div class="backdrop" data-modal>
                          <div class="modal">
-                            <button class="close-modal-btn" type="button">
+                            <button class="close-modal-btn" type="button" data-modal-close>
                              <svg class="close-icon" width="8" height="8">
                                 <use href="./images/icons.svg#icon-close"></use>
                             </svg>
@@ -658,5 +656,7 @@
                         </form>
                     </div>
                 </div>
-    </body>
+    <script src="./js/menu.js"></script>
+    <script src="./js/backdrop.js"></script>
+    </body> 
 </html>

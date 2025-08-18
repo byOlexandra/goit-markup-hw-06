@@ -218,10 +218,6 @@ ul, ol {
 }
 
 .mobile-menu-container {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding-top: 72px;
     padding-bottom: 40px;
     display: flex;
@@ -450,8 +446,6 @@ ul, ol {
     padding: 112px 0;
     max-width: 768px;
 }
-}
-
 .main-title {
     max-width: 496px;
     line-height: 1.07;
@@ -468,7 +462,6 @@ ul, ol {
     ),
      url(../images/background-hero/hero-back-tab-min.jpg);
 }
-
 @media (min-resolution: 192dpi) {
     .header-section {
         background-image: 
@@ -481,6 +474,11 @@ ul, ol {
     }
 
 }
+}
+
+
+
+
 
 /* hero section laptop */
 
